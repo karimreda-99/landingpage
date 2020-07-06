@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="containar navbar">
+     <header>
+        <div class="lgo">
+            <h1>LOGO</h1>
+        </div>
+      <nav>    
+        <ul>
+          <li><a href="#about">about me</a></li>
+          <li><a href="#work">my work</a></li>
+        </ul>
+      </nav>
+     </header>
+    </div>
+  <div class="container main-ifo-section">
+    <div class="text">
+      <h1>
+
+        <span>H</span>
+        <span class="m-left">i</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>I</span>
+        <span class="m-left">'</span>
+        <span class="m-left">m</span>
+        <span class="name">K</span>
+        <span class="m-left name">a</span>
+        <span class="m-left name">r</span>
+        <span class="m-left name">i</span>
+        <span class="m-left name">m</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>W</span>
+        <span class="m-left">e</span>
+        <span class="m-left">b</span>
+        <span>D</span>
+        <span class="m-left">e</span>
+        <span class="m-left">v</span>
+        <span class="m-left">e</span>
+        <span class="m-left">l</span>
+        <span class="m-left">o</span>
+        <span class="m-left">p</span>
+        <span class="m-left">e</span>
+        <span class="m-left">r</span>
+        <span class="m-left">.</span>
+
+      </h1>
+
+      <p>HTML / CSS / Javascript / Python</p>
+      <a href="#contact">contact me</a>
+
+    </div>
+  </div>
+
+
+    <section id="about"  class="your-active-class">
+      <div class="container" data-nav="about">
+        <h2>About Me</h2>
+        <div class="about-me-info"></div>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, fugiat? Ullam expedita ipsa quibusdam, quo in accusamus necessitatibus dolorum cupiditate voluptatum nobis itaque odit dolorem totam voluptatem quidem voluptas delectus adipisci qui, deserunt amet inventore ut. Rem explicabo exercitationem quas non accusamus incidunt assumenda praesentium sapiente error natus, perspiciatis ad recusandae animi fuga earum consectetur. Nisi repudiandae repellendus cum optio.
+            </p>
+        </div>    
+      </div>
+    </section>
+    <section id="work">
+      <div class="container work" data-nav="work">
+        <h2>My Work</h2>
+        <div class="work-category">
+            <button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designing</button>
+            <button id="animation" onclick="showRequiredCategory(this)">UI/UX</button>
+            <button id="project" onclick="showRequiredCategory(this)">Web Projects</button>
+          </div>
+          <div class="category-designing showCategory">
+            <a href=""><img src="img/1.png"></a>
+            <a href=""><img src="img/2.png"></a>
+          </div>
+    
+          <div class="category-animation hideCategory">
+            <a href=""><img src="img/2.png"></a>
+            <a href=""><img src="img/3.png"></a>
+          </div>
+    
+          <div class="category-project hideCategory">
+            <a href=""><img src="img/3.png"></a>
+            <a href=""><img src="img/2.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+        <div class="container contact" data-nav="contact" id="contact">
+            <h1>Contact</h1>
+            <form>
+              <input type="text" name="name" placeholder="Full Name">
+              <input type="email" placeholder="Email">
+              <input type="email" placeholder="PortfolioPersonalEmail@example.com" disabled>
+              <textarea name="message" cols="38" rows="10" placeholder="Message"></textarea>
+              <input type="submit">
+            </form>
+          </div>
+    </section>
+    <footer>
+        <hr>
+        <p>&copy 2020 Copyrights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
